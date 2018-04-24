@@ -1,4 +1,3 @@
-
 require("dotenv").config();
 const keys = require("./keys");
 const Spotify = require("node-spotify-api");
@@ -21,7 +20,7 @@ const commands = (params) => {
             getTweets();
             break;
         case `spotify-this-song`:
-            (!params[1]) ? spotSearch('hey joe') : spotSearch(params[1]);
+            (!params[1]) ? spotSearch('crumbling castle') : spotSearch(params[1]);
             break;
         case `movie-this`:
             (!params[1]) ? getMovie('Zardoz') : getMovie(params[1]);
